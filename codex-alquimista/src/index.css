@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #050508;
+    color: #e2e8f0;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse-slow {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-arcane-cw {
+  animation: spin-slow 25s linear infinite;
+}
+
+.animate-arcane-ccw {
+  animation: spin-reverse-slow 35s linear infinite;
+}
